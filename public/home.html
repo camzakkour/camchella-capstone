@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMCHELLA | Home</title>
+    <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+  <header>
+    <h1> <a style="font-size: 34px" href="home.html">CAMCHELLA |</a> April 15-17 & 22-24 </h1>
+        
+    <nav>
+      <a href="login.html" id="login">Login</a>
+      <a href="account.html" id="account">Account</a>
+    </nav>
+  </header>
+
+  <div id="lineupSec">
+    <div id="innerLineupSec">
+      <h2 id="lineup"> Lineup </h2>
+      <img id="coachImg" src="https://media-prd.coachella.com/templates/template10/images/equilzer-ink.png">
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="searchBar">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for your favorite artists...">
+  </div>  
+  
+  <ul id="myUL"></ul>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+  </style>
+    
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("p")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

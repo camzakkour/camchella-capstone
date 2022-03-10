@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMCHELLA | Account</title>
+    <link rel="stylesheet" href="account.css"/>
+</head>
+<body>
+    <header>
+        <h1> <a style="font-size: 34px" href="home.html">CAMCHELLA |</a> April 15-17 & 22-24 </h1>
+            
+        <nav>
+            <a href="login.html" id="login">Login</a>
+            <a href="account.html" id="account">Account</a>
+        </nav>
+    </header>
+
+    <div id="WelcomeSec">
+        <div id="welcomeNameSec">
+            <h2>Welcome, </h2>
+        </div>
+        <img id="astroImg" src="https://media-prd.coachella.com/content/coachella-2022/nav-illustration-experience.png"/>
+    </div>
+
+    <br>
+    
+    <h2>Your Favorite Artists:</h2>
+    <br>
+    <div id="favsSec">
+        <ul id="favsUL"></ul>
+    </div>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+    </style>
+
+    <!-- <script>
+    const getUserFavs = () => {
+        axios.get(`${baseURL}/users`)
+            .then(res => console.log(res.data))
+        .catch(error => console.log(error))
+    }
+
+    getUserFavs()
+    </script> -->
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>

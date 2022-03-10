@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------*/
+/* Color of Background */
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom,#FFF4E3,#DC758F,#FFDD4A,#FFF4E3);
+}
+
+/* ---------------------------------------------------*/
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+h1 {
+    color: Black;
+    font-family: 'Chelsea Market';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+#account{
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#login {
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#login:hover {
+    color: #5AB1BB;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-size: 20px;
+}
+#account:hover {
+    color: #5AB1BB;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px
+}
+
+#signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px;
+    background-color: #3581B8;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: white;
+}
+
+#signIn > button {
+    margin-top: 5px;
+    background-color: #5AB1BB;
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+}
+
+#signIn > button:hover {
+    cursor: pointer;
+}
+
+#user-name {
+    border-radius: 5px;
+}
+#password {
+    border-radius: 5px;
+}
+#name {
+    border-radius: 5px;
+}
+
+#footerImg {
+    width: 100%;
+    position:fixed;
+    bottom:0px;
+}

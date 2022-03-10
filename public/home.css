@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------*/
+/* Color of Background */
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom,#FFF4E3,#DC758F,#FFDD4A,#FFF4E3);
+}
+
+/* ---------------------------------------------------*/
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+h1 {
+    color: Black;
+    font-family: 'Chelsea Market';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+#account{
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#login {
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#login:hover {
+    color: #5AB1BB;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-size: 20px;
+}
+#account:hover {
+    color: #5AB1BB;
+}
+
+/* ---------------------------------------------------*/
+/* Lineup and image section */
+#lineupSec {
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+#innerLineupSec {
+    flex-direction: row;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#lineup {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 48px;
+}
+#coachImg {
+    width: 50vw
+}
+
+/* ---------------------------------------------------*/
+/* Break */
+hr{
+    width: 62.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid black;
+}
+
+/* ---------------------------------------------------*/
+/* Filter Bar */
+#searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 35%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------*/
+/* The Lists of Artists */
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+#myUL li {
+    border: 3px solid #5AB1BB;
+    border-radius: 5px;
+    background-color: #f6f6f6; 
+    padding: 12px; 
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#myUL li:hover:not(.header) {
+    background-color: #5AB1BB;
+    border: 3px solid #f6f6f6;
+}
